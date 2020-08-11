@@ -1,0 +1,8 @@
+--- 
+- 
+  name: "Execute the command in remote shell; stdout goes to the specified file on the remote."
+  shell: /var/lib/jenkins/cloud-devops-project/scripts/kubernetes_deploy.sh
+  register: hello
+
+-
+  debug: var=hello.stdout_lines

@@ -1,0 +1,7 @@
+# Install kubernetes
+- hosts: localhost
+  connection: local
+  become: True
+  become_user: jenkins
+  roles:
+    - kubernetes
